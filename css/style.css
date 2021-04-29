@@ -1,0 +1,30 @@
+*{
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#000000;
+}
+.sec-1-body{
+    text-align: center;
+}
+.scrolldown-button{
+    text-align: center;
+}
+.header-top{
+    font-size: 1.1em;
+}
+.header-bottom{
+    font-size: .75em;
+}
+.section-2{
+    text-align: center;
+}
+.sec-2-col-header{
+    font-size: 1em;
+    font-weight: bold;
+}
+.sec-2-col p{
+    font-size: .75em;
+}
