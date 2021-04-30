@@ -6,12 +6,15 @@ li{
 /* section 1 starts below */
 .section1{
     width: 100%;
-    height: fit-content;
+    height: 100%;
     position: relative;
+    min-width: 956px;
 }
 
 .section-1-background {
-    width: 100vw;
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
 }
 .section-1-background img{
     width: 100%;
@@ -32,21 +35,26 @@ li{
 .sec-1-header-left{
     float: left;
     width: 45%;
+    max-width: 378px;
     height: 100%;
 }
 
-.section1 ul,.section1 li{
+.section1 li{
+    margin-top: 9px;
+    display: inline-block;
     height: 100%;
-    text-align: left;
 }
 .sec-1-header-left li a{
-    display: inline-block;
-    background-color: aliceblue;
+    margin-top: 9px;
     height: 100%;
+    margin-right: 18px;
+}
+.sec-1-header-left li a :last-child{
+    margin-right: 0px;
 }
 .sec-1-header-mid{
-    float: left;
     width: 10%;
+    display: inline-block;
 }
 .logo{
     max-width: 62px;
@@ -68,6 +76,7 @@ li{
 
 .sec-1-body-wrapper{
     height:86%;
+    max-height: ;
 }
 .sec-1-body{
     width: 100%;
@@ -80,10 +89,18 @@ li{
     vertical-align: middle;
 }
 
+.sec-1-body-content-above{
+    margin-bottom: 2.5vw;
+}
+
+.sec-1-body-content-below button{
+    padding: 8px 24px;
+}
 .sec-1-footer{
     height: 6%;
 }
 .scrolldown-button{
+    padding: 6px 12px;
     min-width: 123px;
     margin: 0 auto;
     width: 11%;
@@ -100,7 +117,6 @@ header{
     margin-bottom: 0.5em;
 }
 .header-line{
-    border: 1px solid #000000;
     width: 3%;
     margin: 0 auto;
 }
@@ -115,7 +131,7 @@ header{
 .sec-2-col{
     width: 33.33%;
     float: left;
-    padding: 0px 8%;
+    padding: 0px 5.9vw;
 }
 
 .sec-2-col-img{
@@ -128,11 +144,12 @@ header{
 }
 
 .sec-2-col p{
-    padding: 20px;
+    padding: 20px 0px;
     line-height: 1.2em;
 }
 .sec-2-col-btn{
-    margin: 5px 0px 70px;
+    margin: 5px 0px 5.9vw;
+    padding: 9px 20px;
 }
 
 
@@ -144,18 +161,24 @@ header{
 }
 .sec-3-category-ul{
     width: fit-content;
-    margin: 0 auto;
-    padding: 15px 0px 45px;
+    margin: 5vw auto;
+    overflow: hidden;
     /* remove spaces between inline-block elements */
     font-size: 0px;
+    line-height: 0px;
+}
+.category{
+    height: 100%;
+    /* reset font-size after removing spaces between inline-block elements */
+    font-size: 1em;
+}
+.sec-3-category-ul li a {
+    height: 100%;
+    display: inline-block;
+    padding: 17px 20px 20px 20px;
+    margin: 0 auto;
 }
 
-.category{
-    background-color: green;
-    padding: 8px 17px 8px 15px;
-    /* reset font-size after removing spaces between inline-block elements */
-    font-size: 1rem;
-}
 
 .sec-3-image-gallery{
     width: 100%;
@@ -188,11 +211,23 @@ header{
     margin: 0 auto;
 }
 
-
 .sec-4-content-wrapper{
-
     padding: 42px 0px 61px;
+    position: relative;
 }
+
+.left-slider-btn{
+    position: absolute;
+    top: 35%;
+    left: 0;
+}
+
+.right-slider-btn{
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
 .sec-4-content pre{
     padding-bottom: 20px;
     text-align: center;
@@ -223,7 +258,6 @@ header{
 .section-5{
     text-align: center;
 }
-
 .sec-5-content{
     padding: 0px 13.24%;
 }
@@ -269,7 +303,6 @@ text-align: none;
 
 .section-6{
     text-align: center;
-    background-color: green;
 }
 .sec-6-content-wrapper{
     padding: 54px 14.7%;
@@ -288,7 +321,6 @@ text-align: none;
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    background-color: #FFF;
     margin: 0 auto;
 }
 
@@ -323,7 +355,7 @@ text-align: none;
 }
 
 .vertical-line{
-    border: 1px solid black;
+    border-right: 1px solid black;
     width:0px;
     height: 77px;
     margin: 10px auto;
@@ -331,6 +363,12 @@ text-align: none;
 .member-name{
     padding: 13px opx;
     min-width: 113px;
+}
+.contact-icon-wrapper{
+    margin: 1vw auto;
+    padding-top: 3px;
+    min-width: 87px;
+    width: 7.1vw;
 }
 
 .contact-icon{
@@ -346,7 +384,7 @@ text-align: none;
 
 .section-7{
     width:100%;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .sec-7-content{
@@ -366,7 +404,7 @@ text-align: none;
 }
 
 .recent-post{
-    padding:15px 0px;
+    padding:3px 0px;
     overflow: auto;
 }
 .recent-post img{
@@ -381,6 +419,10 @@ text-align: none;
 }
 .recent-post-content p{
     padding-bottom: 5px;
+}
+.magazine{
+    width: 86px;
+    padding: 2px;
 }
 
 .contact-us-wrapper{
@@ -403,4 +445,19 @@ text-align: none;
 .contact-us-form button{
     width: 100%;
     padding: 12px;
+}
+/* section-8 below */
+.section-8{
+    width: 100vw;
+}
+
+.sec-8-content-wrapper{
+    padding: 0px 8vw;
+}
+.sec-8-content{
+    display: table;
+    width: 100%;
+}
+.sec-8-media{
+    display: table-cell;
 }
