@@ -453,8 +453,14 @@ text-align: none;
 
 .sec-8-content-wrapper{
     padding: 0px 8vw;
+    position: relative;
+    text-align: center;
 }
 .sec-8-content{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     display: table;
     width: 100%;
 }
